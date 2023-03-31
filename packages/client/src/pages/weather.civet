@@ -1,0 +1,14 @@
+{ createSignal } from 'solid-js'
+{ edenTreaty } from '@elysiajs/eden'
+type { App } from '@weather-app/server'
+
+let app = edenTreaty<App>('http://localhost')
+
+export const Weather = () =>  {
+    let [fetching, setFetching] = createSignal(true)
+    let [weatherForecast, setWeatherForecast] = createSignal()
+
+    <div>
+      {fetching() && "Loading weather forecast..."}
+      {weatherForecast() != null && <pre>{JSON.stringify(weatherForecast(), null ,2)}}
+}
