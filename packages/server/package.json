@@ -12,8 +12,7 @@
     "bun-types": "latest"
   },
   "module": "src/index.js",
-  "description": "## Getting Started To get started with this template, simply paste this command into your terminal: ```bash bun create elysia ./elysia-example ```",
-  "main": "index.js",
+  "main": "src/index.ts",
   "author": "",
   "license": "ISC"
 }
