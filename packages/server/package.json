@@ -1,0 +1,19 @@
+{
+  "name": "@weather-app/server",
+  "version": "1.0.28",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "elysia": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "src/index.js",
+  "description": "## Getting Started To get started with this template, simply paste this command into your terminal: ```bash bun create elysia ./elysia-example ```",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}
